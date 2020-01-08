@@ -236,3 +236,22 @@ main {
 .links a:hover {
     color: gray;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: rgba(56, 1, 102, 0.6); 
+  }
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(56, 1, 102, 0.9); 
+  }
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(56, 1, 102, 0.7); 
+  }
