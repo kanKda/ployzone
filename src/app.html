@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Piskel clone</title>
+    <script defer src="../dist/bundle.js"></script>
+    <link href="../dist/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <a class="logo" href="../index.html"><h1>PISKEL <br> CLONE</h1></a>
+    <main>
+        <div class="toolSide">
+            <div class="tools">
+                <div class="toolsItem firstToolItem active" id="pencil">
+                    <div class="toolIcon" style="background-image: url(../src/images/tool_icons/pencil.png);"></div>
+                    <p>Pen</p>
+                </div>
+                <div class="toolsItem" id="colorPick">
+                    <div class="toolIcon" style="background-image: url(../src/images/tool_icons/color_picker.png);"></div>
+                    <p>Color pick</p>
+                </div>
+                <div class="toolsItem" id="eraser">
+                    <div class="toolIcon" style="background-image: url(../src/images/tool_icons/eraser.png);"></div>
+                    <p>Eraser</p>
+                </div>
+                <div class="toolsItem" id="wand">
+                    <div class="toolIcon" style="background-image: url(../src/images/tool_icons/wand.png);"></div>
+                    <p>Paint same pixels</p>
+                </div>
+                <div class="toolsItem" id="stroke">
+                    <div class="toolIcon" style="background-image: url(../src/images/tool_icons/ruler.png);"></div>
+                    <p>Stroke</p>
+                </div>
+                <div class="toolsItem" id="bucket">
+                    <div class="toolIcon" style="background-image: url(../src/images/tool_icons/bucket.png);"></div>
+                    <p>Paint bucket</p>
+                </div>
+                <div class="toolsItem paletteTool lastToolItem">
+                    <div class="paletteItem" id="currentColor">
+                        <p>Current: </p>
+                        <input type="color" id="colorInput">
+                        <div class="colorCircle" style="background: yellow;" id="currentCircle"></div>
+                    </div>
+                    <div class="paletteItem" id="prevColor">
+                        <p>Previous: </p>
+                        <div class="colorCircle" style="background: black" id="previousCircle"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="frames">
+                <p>Frames</p>
+                <div class="frameScope">
+                    <div class="framesAppend" id="appendFrame">Add new frame</div>
+                </div>
+            </div>
+        </div>
+        <canvas id="canvas"></canvas>
+        <div class="preview">
+            <p>Preview</p>
+            <span>Click on preview for fullscreen mode</span>
+            <img id="canvasPreview" width="250px" height="250px">
+            <a id="downloadGif" download="piskel-clone">
+            <button class="downloadGif">Download GIF</button>
+            </a>
+            <p>Frames per second</p>
+            <label for="fpsMeter" id="fpsValue">10 FPS</label>
+            <input type="range" name="volume" min="1" max="24" value="10" id="fpsMeter">
+            <p>Pen size</p>
+            <div class="penSizes">
+                <div class="sizeUnit activeSizeUnit" id="size16">1 unit</div>
+                <div class="sizeUnit" id="size32">2 unit</div>
+                <div class="sizeUnit" id="size48">3 unit</div>
+                <div class="sizeUnit" id="size64">4 unit</div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
