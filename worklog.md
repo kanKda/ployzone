@@ -8,3 +8,5 @@
 | Jan 6 | Jan 6 | 2 hrs | preview & GIF implementation |
 | Jan 6 | Jan 7 | 2 hrs | pen size, FPS & fullscreen preview implementation |
 | Jan 7 | Jan 7 | 5 hrs | landing page implementation |
+
+Total: 19.5 hrs
